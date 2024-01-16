@@ -252,6 +252,7 @@
   .about{
     display:flex;
     align-items:center;
+    height:80vh;
   }
   .about__wrapper{
     display:flex;
@@ -276,7 +277,7 @@
   /* TRENDS */
   .trends{
     background-color:#2b2b2b;
-    height:100vh;
+    height:80vh;
     display:flex;
     align-items:center
   }
@@ -290,7 +291,9 @@
   }
   
   .trends__title p{
-    color:white
+    color:white;
+    font-size:2rem;
+
   }
   .trends__content{
     display:grid;
@@ -303,12 +306,13 @@
     background-color:#ffffff;
     position:relative;
     align-items:center;
+    height:420px
   }
   .trends__card h4{
     color:#ffa700;
     padding:2rem;
     font-size:2rem;
-    font-weight:600
+    font-weight:700
     }
   .trends__card p{
     padding:2rem;
@@ -320,8 +324,53 @@
   .trends__card a{
     color:#ffa700;
     padding:0 2rem;
-    
+    font-weight:550
+  }
 
+  /* CONTACT */
+  .contact{
+    background-color:#ffa700;
+    display:flex;
+    flex-direction:column;
+    text-align:center
+  }
+  .contact__wrapper{
+    padding:5rem 0
+  }
+  .contact__text h4{
+    font-size:3rem;
+    font-weight:600
+  }
+  .contact__text p{
+    font-size:2rem;
+    margin-bottom:1rem
+  }
+
+  .btn.bg--gray{
+    font-weight:300 !important;
+  }
+  
+  /* FOOTER */
+  .footer{
+    width:100%;
+    background-color:#2b2b2b
+  }
+  .footer__wrapper{
+    display:flex;
+    justify-content:space-between;
+    padding: 3rem 0;
+  }
+  .footer ul{
+    display:flex;
+    align-items:center;
+    gap:3rem
+  }
+  .footer ul li a i{
+    color:#d3d3d3;
+    font-size:2.5rem
+  }
+  .footer p{
+    color: #d3d3d3
   }
   /* REPEATABLE PATTERNS */
   .btn{
@@ -338,4 +387,8 @@
 
   .btn.bg--primary{
     background-color:#ffa700;
+  }
+
+  .btn.bg--gray{
+    background-color:#2b2b2b
   }
