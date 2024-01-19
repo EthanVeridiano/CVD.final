@@ -134,6 +134,7 @@
     align-items:center;
     text-align:center;
     z-index:999;
+    height:150px
   }
   .header.active{
     color: white;
@@ -499,7 +500,8 @@
     display:flex;
     align-items:center;
     justify-content:space-between;
-    gap:3rem
+    gap:3rem;
+    order:1
   }
   .about__content h2{
     color:#ffa700;
@@ -510,6 +512,7 @@
   }
   .about__content p{
     max-width:70rem;
+
     margin-bottom:3rem;
     font-size:2rem;
     font-weight:300;
@@ -869,7 +872,7 @@
     max-width:130rem;
     margin:0 auto;
     width:100%;
-    padding:1.5rem;
+    padding:20rem 0 30rem 0;
   }
   .project__text h2{
     font-size:5rem;
@@ -966,6 +969,7 @@
     color:#ffa700;
   }
 
+.service
   @media screen and (max-width:500px){
     .contact__page{
       height:140vh;
@@ -986,6 +990,82 @@
     width:450px
   }
 }
+/* SERVICES PAGE */
+.service__banner{
+  padding:20rem 0 7rem 0;
+}
+.service__content{
+  order:0;
+}
+.service__wrapper{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:10rem
+}
+  .services__title h1 {
+  color:#ffa700;
+  font-size:6rem;
+  font-weight:750;
+}
+  .service__text{
+  padding:5rem 0;
+  width:500px
+}
+  .service__text p{
+  font-size:2rem;
+  text-align:justify;
+}
+  .service__wrapper img{
+  width:900px;
+  align-items:center;
+  order:-2;
+}
+  .service__price h4{
+  font-size:2rem
+}
+  .service__price h3{
+  color:#ffa700;
+  font-size:3rem;
+  font-weight:700
+}
+  .service__price h6{
+  font-size:1rem;
+  width:150px;
+  font-style:italic;
+}
+.container ul{
+  padding:5rem 0
+}
+.container ul li{
+  display:flex;
+  justify-content:center
+}
+.container ul li i{
+  color:#ffa700;
+  font-size:5rem;
+}
+
+/* SERVICES ODD */
+.service__banner:nth-child(odd){
+  padding:20rem 0 7rem 0;
+  background-color:#2b2b2b;
+  display:flex;
+}
+.service__banner:nth-child(odd) .service__content{
+  order:2;
+}
+.service__banner:nth-child(odd) p{
+color:#ffffff;
+}
+.service__banner:nth-child(odd) h6{
+  color:#ffffff;
+  }
+.service__banner:nth-child(odd) h4{
+  color:#ffffff;
+  }
+
+
+
   /* REPEATABLE PATTERNS */
   .btn{
     display:inline-block;
