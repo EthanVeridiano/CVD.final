@@ -994,15 +994,13 @@
 .service__banner{
   padding:20rem 0 7rem 0;
 }
-.service__content{
-  order:0;
-}
+
 .service__wrapper{
   display:grid;
   grid-template-columns:1fr 1fr;
   gap:10rem
 }
-  .services__title h1 {
+  .service__title h1{
   color:#ffa700;
   font-size:6rem;
   font-weight:750;
@@ -1044,27 +1042,53 @@
   color:#ffa700;
   font-size:5rem;
 }
-
+@media screen and (max-width:560px){
+  .service__banner{
+    max-width:500px
+  }
+  .service__wrapper{
+    display:grid;
+    grid-template-columns:1fr;
+  }
+  .service__img{
+    width:450px
+  }
+  .service__text p{
+  width:450px;
+  }
+  .service__title h1{
+    width:400px;
+    margin:0 auto;
+    font-size:3rem;
+  }
+  .service__content{
+  order:2;
+  }
+  .service__price{
+    width:200px;
+    display:flex;
+    flex-direction:column;
+    margin:0 auto;
+  }
+}
 /* SERVICES ODD */
-.service__banner:nth-child(odd){
+.service__banner:nth-child(even){
   padding:20rem 0 7rem 0;
   background-color:#2b2b2b;
   display:flex;
 }
-.service__banner:nth-child(odd) .service__content{
+.service__banner:nth-child(even) .service__content{
   order:2;
 }
-.service__banner:nth-child(odd) p{
+.service__banner:nth-child(even) p{
 color:#ffffff;
 }
-.service__banner:nth-child(odd) h6{
+.service__banner:nth-child(even) h6{
   color:#ffffff;
   }
-.service__banner:nth-child(odd) h4{
+.service__banner:nth-child(even) h4{
   color:#ffffff;
   }
-
-
 
   /* REPEATABLE PATTERNS */
   .btn{
