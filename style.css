@@ -658,6 +658,7 @@
     display:flex;
     justify-content:space-between;
     padding: 3rem 0;
+    align-items:center
   }
   .footer ul{
     display:flex;
@@ -669,7 +670,7 @@
     font-size:2.5rem
   }
   .footer p{
-    color: #d3d3d3
+    color: #d3d3d3;
   }
   @media screen and (max-width:560px){
     .footer__wrapper{
@@ -862,17 +863,82 @@
       flex-direction:column;
     }
   }
+  /* ABOUTME */
+  .aboutme{
+    padding-top:20rem;
+  }
+  .aboutme__wrapper{
+    display:flex;
+    align-items:center;
+    gap:20rem;
+  }
+  .aboutme__text{
+    width:400px
+  }
+  .aboutme__text h4{
+    font-size:2rem;
+  }
+  .aboutme__text h1{
+    color:#ffa700;
+    font-size:7rem;
+    font-weight:800;
+    line-height:.8;
+    margin-bottom:5rem
+
+  }
+  .aboutme__logo{
+    width:20rem
+  }
+  .aboutme__logo ul{
+    display:flex;
+    justify-content:space-between;
+  }
+  .aboutme__logo ul li a i{
+    font-size:3rem;
+    
+  }
+  @media screen and (max-width:500px){
+    .aboutme__wrapper{
+      display:grid;
+      grid-template-columns:1fr;
+      gap:5rem;
+  }
+  .aboutme__content{
+    order:2;
+  }
+  .aboutme__text{
+    width:470px;
+    margin:0 auto;
+  }
+  .aboutme__text h4{
+    text-align:center;
+  }
+  .aboutme__text h1{
+    text-align:center
+  }
+  .aboutme__text p{
+    width:450px;
+    margin:0 auto;
+  }
+  .aboutme__logo ul{
+    width:450px;
+    display:flex;
+    justify-content:space-around;
+  }
+}
   /* ABOUT PROJECTS */
   .project__wrapper{
     background-color:#2b2b2b;
     width:100%;
-    height:100vh;
   }
   .project__content{
     max-width:130rem;
     margin:0 auto;
     width:100%;
-    padding:20rem 0 30rem 0;
+    padding:15rem 0 15rem 0;
+  }
+  .project__text{
+    margin-bottom:7rem
   }
   .project__text h2{
     font-size:5rem;
@@ -885,8 +951,37 @@
   .project__cards{ 
     display:grid;
     grid-template-columns:1fr 1fr 1fr;
+    gap:5rem
   } 
+  .rec__proj__cards{
+    background-color:white;
+    width:35rem;
+    border-radius:2rem;
+    height:40rem;
 
+  }
+  .project__cards h4{
+    color:#ffa700;
+    margin:2rem 1rem;
+    font-weight:600
+  }
+  .project__cards p{
+    color:#2b2b2b;
+    margin:0 1rem;
+  }
+@media screen and (max-width:500px){
+  .project__cards{
+    display:grid;
+    grid-template-columns:1fr
+  }
+  .rec__proj__cards{
+    width:355px;
+    margin:0 auto;
+  }
+  .project__text{
+    text-align:center
+  }
+}
   /* CONTACT PAGE */
   .contact__page{
     padding:3.27rem 0;
