@@ -180,7 +180,8 @@
     padding: 1.5rem 2rem
   }
   .header__nav .open{
-    color:#ffa700
+    color:#ffa700;
+    border-bottom: 2px solid #ffa700
   }
   .header__nav ul li a{
     color:#ffffff;
@@ -228,7 +229,7 @@
     transform:translate(0,-2.5px) rotate(-225deg);
   }
 
-  @media screen and (max-width:560px){
+  @media screen and (max-width:500px){
     .header{
       background:#2b2b2b;
       margin-top:0;
@@ -334,9 +335,7 @@
     align-items:center;
     justify-content:space-between;
   }
-  .banner__img{
-    width:700px;
-  }
+  
 
   .banner__text h1 {
     font-size:7rem;
@@ -370,7 +369,7 @@
       border:2px solid #ffa700;
       color:#ffa700;
     }
-  @media screen and (max-width:560px){
+  @media screen and (max-width:500px){
     .banner__text h1 {
       font-size:3rem;
       width:450px;
@@ -447,6 +446,7 @@
     bottom:0;
     left:20%;
     color:white;
+    scale:0
   }
 
   .services__card:hover{
@@ -454,13 +454,37 @@
     scale:1.1;
     transition:.5s ease;
   }
+  .services__card h4{
+    transform:translate(0,5rem) rotate(0deg);
+    transition:.5s ease;
+  }
+  .services__card i{
+    transform:translate(0,5rem) rotate(0deg);
+    transition:.5s ease;
+  }
+  .services__card p{
+    transform:translate(0,5rem) rotate(0deg);
+    transition:.5s ease;
+  }
+  .services__card:hover h4{
+    transform:translate(0,-5rem) rotate(0deg);
+    transition:.5s ease;
+  }
+  .services__card:hover i{
+    transform:translate(0,-5rem) rotate(0deg);
+    transition:.5s ease;
+  }
+  .services__card:hover p{
+    transform:translate(0,-5rem) rotate(0deg);
+    transition:.5s ease;
+  }
   .services__card:hover a{
-    scale:1.1;
+      scale:1.1;
       background:transparent;
       border:2px solid #ffa700;
       color:#ffa700;
       transition:1s ease;
-      transform:translate(0,-3rem) rotateY(720deg);
+      transform:translate(0,-5rem) rotate(720deg);
   }
   @media screen and (max-width:500px){
     .services__wrapper{
@@ -481,12 +505,37 @@
       scale:1;
       transition:.5s ease;
     }
+    
     .services__card:hover a{
         scale:1;
         background-color:#ffa700;
         border:2px solid #ffa700;
         color:white;
         transform:translate(0,0rem) rotate(0deg);
+  }
+  .services__card h4{
+    transform:translate(0,0rem) rotate(0deg);
+    transition:.0s ease;
+  }
+  .services__card i{
+    transform:translate(0,0rem) rotate(0deg);
+    transition:.0s ease;
+  }
+  .services__card p{
+    transform:translate(0,0rem) rotate(0deg);
+    transition:.0s ease;
+  }
+  .services__card:hover h4{
+    transform:translate(0,-0rem) rotate(0deg);
+    transition:.0s ease;
+  }
+  .services__card:hover i{
+    transform:translate(0,-0rem) rotate(0deg);
+    transition:.5s ease;
+  }
+  .services__card:hover p{
+    transform:translate(0,0rem) rotate(0deg);
+    transition:.5s ease;
   }
 }
   /* ABOUT */
@@ -500,7 +549,7 @@
     display:flex;
     align-items:center;
     justify-content:space-between;
-    gap:3rem;
+    gap:10rem;
     order:1
   }
   .about__content h2{
@@ -518,8 +567,10 @@
     font-weight:300;
     text-align:justify;
   }
-  
-  @media screen and (max-width:560px){
+  .about__img img{
+    width:800px
+  }
+  @media screen and (max-width:500px){
     .about{
       padding:20rem 0;
     }
@@ -649,15 +700,15 @@
   /* FOOTER */
   .footer{
     width:100%;
-    background-color:#2b2b2b
+    background-color:#2b2b2b;
   }
   .footer.active{
-    border-top:2px solid white
+    border-top:2px solid white;
+
   }
   .footer__wrapper{
     display:flex;
     justify-content:space-between;
-    padding: 3rem 0;
     align-items:center
   }
   .footer ul{
@@ -873,7 +924,7 @@
     gap:20rem;
   }
   .aboutme__text{
-    width:400px
+    width:500px
   }
   .aboutme__text h4{
     font-size:2rem;
@@ -884,7 +935,10 @@
     font-weight:800;
     line-height:.8;
     margin-bottom:5rem
-
+  }
+  .aboutme__text p{
+    font-size:2rem;
+    text-align:justify;
   }
   .aboutme__logo{
     width:20rem
@@ -958,12 +1012,16 @@
     width:35rem;
     border-radius:2rem;
     height:40rem;
-
+    transition: .5s ease;
   }
-  .project__cards h4{
+  .rec__proj__cards:hover{
+    transition: .5s ease;
+    scale:1.1;
+  }
+  .project__cards a{
     color:#ffa700;
     margin:2rem 1rem;
-    font-weight:600
+    font-weight:600;
   }
   .project__cards p{
     color:#2b2b2b;
@@ -981,6 +1039,7 @@
   .project__text{
     text-align:center
   }
+  
 }
   /* CONTACT PAGE */
   .contact__page{
@@ -1064,27 +1123,6 @@
     color:#ffa700;
   }
 
-.service
-  @media screen and (max-width:500px){
-    .contact__page{
-      height:140vh;
-    }
-    .contact__page__wrapper{
-      display:grid;
-      grid-template-columns:1fr;
-      padding-top:20rem;
-  }
-  .contact__page__title h3{
-    width:450px
-  }
-  .contact__page__form form a{
-    bottom:0%;
-    right:30% 
-  } 
-  .contact__page__form form{
-    width:450px
-  }
-}
 /* SERVICES PAGE */
 .service__banner{
   padding:20rem 0 7rem 0;
@@ -1137,7 +1175,7 @@
   color:#ffa700;
   font-size:5rem;
 }
-@media screen and (max-width:560px){
+@media screen and (max-width:500px){
   .service__banner{
     max-width:500px
   }
@@ -1165,6 +1203,24 @@
     flex-direction:column;
     margin:0 auto;
   }
+  .contact__page{
+    padding:3.27rem 0;
+  }
+  .contact__page__wrapper{
+    display:grid;
+    grid-template-columns:1fr;
+    padding-top:20rem;
+}
+.contact__page__title h3{
+  width:450px
+}
+.contact__page__form form a{
+  bottom:0%;
+  right:30% 
+} 
+.contact__page__form form{
+  width:450px
+}
 }
 /* SERVICES ODD */
 .service__banner:nth-child(even){
